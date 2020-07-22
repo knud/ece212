@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ECE 212 Lab 4"
-Date "2020-06-30"
+Date "2020-07-12"
 Rev "V1.0.0"
 Comp "ECE Department, University of Alberta"
 Comment1 ""
@@ -75,35 +75,15 @@ F 12 "Active" H 7000 5050 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MIC2931050WUTR:MIC29310-5.0WU-TR U5
-U 1 1 5EF75291
-P 3750 1250
-F 0 "U5" H 3750 1587 60  0000 C CNN
-F 1 "MIC29310-5.0WU-TR" H 3750 1481 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-3_TabPin4" H 3750 1440 60  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic29310.pdf" H 2700 850 60  0001 C CNN
-	1    3750 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C2
-U 1 1 5EF75D85
-P 4700 1500
-F 0 "C2" H 4788 1546 50  0000 L CNN
-F 1 "47u" H 4788 1455 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_5x5.8" H 4700 1500 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1151.pdf" H 4700 1500 50  0001 C CNN
-	1    4700 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C1
 U 1 1 5EF7721B
 P 2800 1500
 F 0 "C1" H 2892 1546 50  0000 L CNN
-F 1 "0u1" H 2892 1455 50  0000 L CNN
+F 1 "0u33" H 2892 1455 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 2800 1500 50  0001 C CNN
-F 3 "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf" H 2800 1500 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_automotive_general_en.pdf" H 2800 1500 50  0001 C CNN
+F 4 "1" H 2800 1500 50  0001 C CNN "POPULATE"
+F 5 "CGA3E1X7R1V334K080AC" H 2800 1500 50  0001 C CNN "MPN"
 	1    2800 1500
 	1    0    0    -1  
 $EndComp
@@ -417,12 +397,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0107
 U 1 1 5F090890
-P 2350 1500
-F 0 "#PWR0107" H 2350 1250 50  0001 C CNN
-F 1 "GND" H 2355 1327 50  0000 C CNN
-F 2 "" H 2350 1500 50  0001 C CNN
-F 3 "" H 2350 1500 50  0001 C CNN
-	1    2350 1500
+P 2350 1750
+F 0 "#PWR0107" H 2350 1500 50  0001 C CNN
+F 1 "GND" H 2355 1577 50  0000 C CNN
+F 2 "" H 2350 1750 50  0001 C CNN
+F 3 "" H 2350 1750 50  0001 C CNN
+	1    2350 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -439,82 +419,56 @@ $EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 5F0916F4
-P 3100 1750
-F 0 "#PWR0109" H 3100 1500 50  0001 C CNN
-F 1 "GND" H 3105 1577 50  0000 C CNN
-F 2 "" H 3100 1750 50  0001 C CNN
-F 3 "" H 3100 1750 50  0001 C CNN
-	1    3100 1750
+P 3500 1700
+F 0 "#PWR0109" H 3500 1450 50  0001 C CNN
+F 1 "GND" H 3505 1527 50  0000 C CNN
+F 2 "" H 3500 1700 50  0001 C CNN
+F 3 "" H 3500 1700 50  0001 C CNN
+	1    3500 1700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0110
 U 1 1 5F092ECF
-P 4700 1750
-F 0 "#PWR0110" H 4700 1500 50  0001 C CNN
-F 1 "GND" H 4705 1577 50  0000 C CNN
-F 2 "" H 4700 1750 50  0001 C CNN
-F 3 "" H 4700 1750 50  0001 C CNN
-	1    4700 1750
+P 4200 1700
+F 0 "#PWR0110" H 4200 1450 50  0001 C CNN
+F 1 "GND" H 4205 1527 50  0000 C CNN
+F 2 "" H 4200 1700 50  0001 C CNN
+F 3 "" H 4200 1700 50  0001 C CNN
+	1    4200 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 1300 4700 1300
+	3800 1200 4200 1200
 Wire Wire Line
-	4700 1300 4700 1400
-Wire Wire Line
-	4700 1600 4700 1750
-$Comp
-L power:GND #PWR0111
-U 1 1 5F0A16DE
-P 4400 1750
-F 0 "#PWR0111" H 4400 1500 50  0001 C CNN
-F 1 "GND" H 4405 1577 50  0000 C CNN
-F 2 "" H 4400 1750 50  0001 C CNN
-F 3 "" H 4400 1750 50  0001 C CNN
-	1    4400 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 1300 3100 1300
-Wire Wire Line
-	3100 1300 3100 1700
+	4200 1200 4200 1400
 Wire Wire Line
 	3200 1200 2800 1200
 Wire Wire Line
 	2800 1200 2800 1400
 Wire Wire Line
 	2800 1600 2800 1700
-Wire Wire Line
-	2800 1700 3100 1700
-Connection ~ 3100 1700
-Wire Wire Line
-	3100 1700 3100 1750
 Connection ~ 2800 1200
 Wire Wire Line
 	2250 1400 2350 1400
 Wire Wire Line
-	2350 1400 2350 1500
+	2350 1400 2350 1750
 Text Notes 700  7300 0    100  ~ 0
 Arrange J2 & J3 connectors to plug into breadboard.\n\nHave +5 and GND connect to rails. The resulting\n\nL-shaped arrangement will plug into the right side of a breadboard.
 $Comp
 L power:VCC #PWR0112
 U 1 1 5EF7F6BA
-P 4700 1000
-F 0 "#PWR0112" H 4700 850 50  0001 C CNN
-F 1 "VCC" H 4717 1173 50  0000 C CNN
-F 2 "" H 4700 1000 50  0001 C CNN
-F 3 "" H 4700 1000 50  0001 C CNN
-	1    4700 1000
+P 4200 900
+F 0 "#PWR0112" H 4200 750 50  0001 C CNN
+F 1 "VCC" H 4217 1073 50  0000 C CNN
+F 2 "" H 4200 900 50  0001 C CNN
+F 3 "" H 4200 900 50  0001 C CNN
+	1    4200 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 1200 4400 1200
-Wire Wire Line
-	4400 1200 4400 1750
-Wire Wire Line
-	4700 1000 4700 1300
-Connection ~ 4700 1300
+	4200 900  4200 1200
+Connection ~ 4200 1200
 $Comp
 L power:VCC #PWR0113
 U 1 1 5EF90115
@@ -748,4 +702,77 @@ F 3 "~" H 8700 1550 50  0001 C CNN
 	1    8700 1550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Regulator_Linear:uA7805 U5
+U 1 1 5F0C51E1
+P 3500 1200
+F 0 "U5" H 3500 1442 50  0000 C CNN
+F 1 "uA7805" H 3500 1351 50  0000 C CNN
+F 2 "Libraries:T0263-3" H 3525 1050 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/ua78.pdf" H 3500 1150 50  0001 C CNN
+F 4 "UA7805CKTTR" H 3500 1200 50  0001 C CNN "MPN"
+F 5 "1" H 3500 1200 50  0001 C CNN "POPULATE"
+	1    3500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5F0CE514
+P 2800 1700
+F 0 "#PWR0111" H 2800 1450 50  0001 C CNN
+F 1 "GND" H 2805 1527 50  0000 C CNN
+F 2 "" H 2800 1700 50  0001 C CNN
+F 3 "" H 2800 1700 50  0001 C CNN
+	1    2800 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1500 3500 1700
+$Comp
+L Device:C_Small C2
+U 1 1 5F0DD631
+P 4200 1500
+F 0 "C2" H 4292 1546 50  0000 L CNN
+F 1 "0u1" H 4292 1455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4200 1500 50  0001 C CNN
+F 3 "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf" H 4200 1500 50  0001 C CNN
+F 4 "1" H 4200 1500 50  0001 C CNN "POPULATE"
+F 5 "CL10A104KA8NNNC" H 4200 1500 50  0001 C CNN "MPN"
+	1    4200 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1700 4200 1600
+$Comp
+L Device:R_Small R9
+U 1 1 5F0E4895
+P 4600 1500
+F 0 "R9" H 4659 1546 50  0000 L CNN
+F 1 "330" H 4659 1455 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 4600 1500 50  0001 C CNN
+F 3 "http://www.koaspeer.com/pdfs/RK73B.pdf" H 4600 1500 50  0001 C CNN
+F 4 "RK73B1JTTD331J" H 4600 1500 50  0001 C CNN "MPN"
+F 5 "1" H 4600 1500 50  0001 C CNN "POPULATE"
+	1    4600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5F0E4F66
+P 4600 1700
+F 0 "#PWR0118" H 4600 1450 50  0001 C CNN
+F 1 "GND" H 4605 1527 50  0000 C CNN
+F 2 "" H 4600 1700 50  0001 C CNN
+F 3 "" H 4600 1700 50  0001 C CNN
+	1    4600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1200 4600 1200
+Wire Wire Line
+	4600 1200 4600 1400
+Wire Wire Line
+	4600 1600 4600 1700
+Text Notes 4900 1600 0    50   ~ 0
+Load to make sure\nregulator is stable.
 $EndSCHEMATC
